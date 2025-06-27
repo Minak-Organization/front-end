@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import AppNavbar from "../components/AppNavbar";
+import AppNavbar from "../components/AppNavrbar";
 import PlaylistModal from "../components/PlaylistModal";
 
 export default function PlaylistPage() {

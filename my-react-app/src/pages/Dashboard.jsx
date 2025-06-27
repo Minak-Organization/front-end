@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import SongCard from "../components/SongCard";
-import Navbar from "../components/AppNavbar";
+import Navbar from "../components/AppNavrbar";
 
 export default function Dashboard() {
   const [songs, setSongs] = useState([]);
