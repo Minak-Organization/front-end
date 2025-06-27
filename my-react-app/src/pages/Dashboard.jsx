@@ -20,7 +20,7 @@ export default function Dashboard() {
       }
 
       try {
-        const res = await fetch("http://localhost:5000/api/songs", {
+        const res = await fetch("https://back-end-music-app.onrender.com/api/songs", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

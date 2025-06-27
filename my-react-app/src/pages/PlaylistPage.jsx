@@ -11,7 +11,7 @@ export default function PlaylistPage() {
   const token = localStorage.getItem("jwt");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/playlists", {
+    fetch("https://back-end-music-app.onrender.com/api/playlists", {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -25,7 +25,7 @@ export default function PlaylistPage() {
   const handleCreate = () => {
     if (newTitle.trim() === "") return;
 
-    fetch("http://localhost:5000/api/playlists", {
+    fetch("https://back-end-music-app.onrender.com/api/playlists", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${token}`,
@@ -42,7 +42,7 @@ export default function PlaylistPage() {
   };
 
   const handleRename = (id, newTitle) => {
-    fetch(`http://localhost:5000/api/playlists/${id}`, {
+    fetch(`https://back-end-music-app.onrender.com/api/playlists/${id}`, {
       method: "PATCH",
       headers: {
         Authorization: `Bearer ${token}`,
